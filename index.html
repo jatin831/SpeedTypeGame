@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedType</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .navbar a {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-secondary ">
+        <a href="#" class="navbar-brand mb-0 mx-auto">SpeedType</a>
+    </nav>
+    <div class="container">
+        <p class="text-white text-center mt-5">Type The Given Word Within <span class="text-success" id="totalTime"></span> seconds</p>
+        <p id="currentWord" class="text-white text-center mt-4">tap on the input box to start the game</p>
+        <form id="formWord">
+            <div class="form-group text-center">
+                <input type="text" autocomplete="off" id="formInput" placeholder="Start typing..." class="form-control mx-auto">
+            </div>
+        </form>
+        <!-- <h3 class = "text-white text-center">You Lost</h3> -->
+        <div class="row">
+            <div class="col-md-6"><p class="text-white text-center h4 mt-2 ">Time Left: <span id="timeLeft"></span></p></div>
+            <div class="col-md-6"><p class="text-white text-center h4 mt-2 ">Score: <span id="score"></span></p></div>
+        </div>
+        
+        <div class="card card-body bg-secondary text-white mt-4">
+            <p class="text-center text-white h5">Instructions</p>
+            <p class="text-white">Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset</p>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
